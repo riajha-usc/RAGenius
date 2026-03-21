@@ -1,43 +1,79 @@
-__pycache__/
-*.py[cod]
-*$py.class
-*.so
+# Python bytecode
+**/__pycache__/
+**/*.py[cod]
+**/*$py.class
+**/*.so
+**/*.pyo
+**/*.pyd
 
-*.egg
-*.egg-info/
-dist/
-build/
-eggs/
-*.manifest
-*.spec
+# Distribution / packaging
+**/*.egg
+**/*.egg-info/
+**/dist/
+**/build/
+**/eggs/
 
-venv/
-env/
-.venv/
-.env.local
+# Virtual environments
+**/venv/
+**/env/
+**/.venv/
+**/ENV/
 
-*.faiss
-*.pkl
-data/faiss_index/*
-!data/faiss_index/.gitkeep
-models/*
-!models/.gitkeep
+# Environment / secrets / credentials
+**/.env
+**/.env.*
+**/*.key
+**/*.pem
+**/*.crt
+**/*.p12
+**/secrets.*
+**/credentials.*
 
-.idea/
-.vscode/
-*.swp
-*.swo
-*~
-.DS_Store
-Thumbs.db
+# ML model weights (large binary files)
+**/*.pt
+**/*.pth
+**/*.bin
+**/*.onnx
+**/*.safetensors
+**/*.h5
+**/*.hdf5
 
-*.log
-*.pid
+# FAISS index files
+**/*.faiss
+**/*.pkl
+**/*.pickle
+**/faiss_index/*
+!**/faiss_index/.gitkeep
 
-.ipynb_checkpoints/
-*.ipynb
+# Downloaded models cache
+**/models/*
+!**/models/.gitkeep
 
-.pytest_cache/
-htmlcov/
-.coverage
-.tox/
+# IDE / editor
+**/.idea/
+**/.vscode/
+**/*.swp
+**/*.swo
+**/*~
+
+# OS files
+**/.DS_Store
+**/Thumbs.db
+
+# Logs
+**/*.log
+**/*.pid
+
+# Jupyter
+**/.ipynb_checkpoints/
+
+# Testing / coverage
+**/.pytest_cache/
+**/htmlcov/
+**/.coverage
+**/.tox/
+**/.mypy_cache/
+
+# Database files
+**/*.sqlite3
+**/*.db

@@ -1,0 +1,21 @@
+Apple Inc. Annual Report Fiscal Year 2024
+
+Revenue and Financial Performance
+Apple Inc. reported total net revenue of $383.3 billion for fiscal year 2024, representing a year-over-year increase of 2.1% from $375.0 billion in fiscal year 2023. The company demonstrated resilience across its product segments despite challenging macroeconomic conditions and foreign currency headwinds.
+
+iPhone revenue totaled $200.6 billion, a marginal increase of 0.8% year-over-year. The iPhone 15 Pro and iPhone 15 Pro Max drove strong average selling prices, partially offset by lower unit volumes in certain markets. Greater China iPhone revenue showed signs of recovery in the second half of the fiscal year, growing 5.2% in Q4 compared to the prior year period.
+
+Services Segment
+The Services segment achieved record annual revenue of $96.2 billion, growing 12.8% year-over-year. This segment includes the App Store, Apple Music, Apple TV+, iCloud, Apple Pay, and licensing revenue. The App Store generated approximately $28.5 billion in revenue, while Apple Pay transaction volume exceeded $1.2 trillion globally. The installed base of active devices surpassed 2.2 billion, providing a robust foundation for continued services growth.
+
+Mac and iPad
+Mac revenue was $29.4 billion, increasing 3.6% driven by the M3 chip family transition. iPad revenue declined 2.1% to $28.3 billion as the market awaited new product launches. The introduction of the M2 iPad Pro in late FY2024 is expected to drive iPad revenue recovery in FY2025.
+
+Operating Expenses and Margins
+Gross margin expanded to 46.6% from 44.1%, driven by a favorable product mix shift toward higher-margin services and premium hardware. Research and development expenses increased 8.3% to $30.2 billion as Apple invested in artificial intelligence, augmented reality, and the Vision Pro platform. Operating income reached $123.5 billion with an operating margin of 32.2%.
+
+Cash Flow and Capital Returns
+Apple generated $112.8 billion in operating cash flow and returned $95.0 billion to shareholders through dividends ($15.0 billion) and share repurchases ($80.0 billion). The company maintained a net cash position of approximately $51.0 billion. Free cash flow was $105.6 billion, reflecting strong cash conversion.
+
+Risk Factors
+Key risk factors include global economic uncertainty, supply chain concentration in East Asia, regulatory scrutiny of the App Store business model in the EU and other jurisdictions, intense competition in the smartphone and services markets, and foreign exchange volatility. The company also faces risks related to the adoption of its Vision Pro mixed reality headset and the competitive landscape for AI-powered features.

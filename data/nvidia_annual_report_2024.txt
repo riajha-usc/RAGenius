@@ -1,0 +1,27 @@
+NVIDIA Corporation Annual Report Fiscal Year 2024
+
+Company Overview
+NVIDIA Corporation designs and sells computing hardware, software, and services. The company operates through two primary segments: Compute and Networking, and Graphics. NVIDIA's GPU technology has become essential infrastructure for artificial intelligence training and inference workloads.
+
+Revenue Performance
+NVIDIA reported record revenue of $60.9 billion for fiscal year 2024, an extraordinary increase of 126% from $27.0 billion in the prior year. This growth was driven predominantly by the Data Center segment, which saw unprecedented demand for AI computing solutions.
+
+Data Center Segment
+Data Center revenue reached $47.5 billion, a 217% increase year-over-year. The H100 Tensor Core GPU became the most in-demand computing product in enterprise technology, with major cloud service providers, enterprises, and sovereign AI initiatives driving procurement. The introduction of the H200 GPU in late FY2024 further strengthened NVIDIA's product portfolio.
+
+Key customers include Microsoft Azure, Amazon Web Services, Google Cloud, Oracle Cloud Infrastructure, and an expanding list of enterprise AI adopters. Revenue from cloud service providers represented approximately 55% of Data Center revenue.
+
+Gaming Segment
+Gaming revenue recovered to $10.4 billion, a 15% increase year-over-year. The GeForce RTX 40 series maintained strong demand, particularly the RTX 4070 and RTX 4060 price points. PC gaming market recovery contributed to improved sell-through rates.
+
+Gross Margin and Profitability
+NVIDIA achieved a gross margin of 73.8%, up from 56.9% in the prior year, reflecting the favorable product mix shift toward high-margin data center products. Operating income was $37.1 billion with an operating margin of 60.9%. Net income reached $32.3 billion, or $12.96 per diluted share.
+
+Research and Development
+R&D investment was $8.7 billion, representing 14.3% of revenue. Key focus areas include next-generation GPU architectures (Blackwell), software ecosystem expansion (CUDA, NVIDIA AI Enterprise), networking solutions (InfiniBand, Spectrum-X), and AI model optimization tools.
+
+Risk Factors
+Principal risk factors include supply chain concentration with TSMC as the primary manufacturing partner, potential expansion of U.S. export controls affecting sales to China, competition from custom AI chips developed by cloud hyperscalers, and the cyclical nature of semiconductor demand. Geopolitical tensions between the U.S. and China remain a significant risk, as China represented approximately 17% of revenue in FY2024, down from 26% in the prior year due to existing export restrictions.
+
+Capital Allocation
+NVIDIA returned $10.4 billion to shareholders through share repurchases and paid $398 million in dividends. The company ended the fiscal year with $26.0 billion in cash, cash equivalents, and marketable securities.
