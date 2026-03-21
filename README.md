@@ -18,44 +18,48 @@ Query → Embedding (HuggingFace) → FAISS Vector Search → Re-ranking → LLM
 - **Flask** - API orchestration layer
 - **Scikit-learn** - Prompt optimization, TF-IDF evaluation, grid search
 
-## Project Structure
-
-```
-financial-assistant/
-├── app.py                  # Flask API server
-├── rag_pipeline.py         # Core RAG pipeline orchestrator
-├── config.py               # Configuration and prompt templates
-├── demo.py                 # End-to-end demo script
-├── requirements.txt        # Dependencies
-├── .env                    # Environment variables
-├── utils/
-│   ├── preprocessing.py    # Document loading, chunking, cleaning (Pandas/NumPy)
-│   ├── embeddings.py       # HuggingFace sentence-transformers encoding
-│   ├── vector_store.py     # FAISS index management and retrieval
-│   ├── generator.py        # LLM text generation with prompt templates
-│   └── evaluation.py       # Metrics, evaluation, prompt optimization (Scikit-learn)
-├── data/
-│   ├── sample_docs/        # Sample financial documents
-│   └── faiss_index/        # Persisted FAISS index
-└── tests/
-    └── test_pipeline.py    # Unit tests
-```
-
 ## Setup
 
 ```bash
 pip install -r requirements.txt
 ```
 
+Create a `.env` file with your configuration:
+
+```
+EMBEDDING_MODEL=sentence-transformers/all-MiniLM-L6-v2
+GENERATION_MODEL=google/flan-t5-base
+CHUNK_SIZE=500
+CHUNK_OVERLAP=50
+TOP_K_RETRIEVAL=5
+TEMPERATURE=0.3
+FAISS_INDEX_TYPE=FlatIP
+FLASK_PORT=5000
+```
+
 ## Usage
 
-### Run the Flask API
+### Run the demo
+
+```bash
+python demo.py
+```
+
+This indexes sample financial documents, runs queries, compares prompt templates, and runs a grid search optimization.
+
+### Start the API server
 
 ```bash
 python app.py
 ```
 
-### API Endpoints
+### Run tests
+
+```bash
+python -m tests.test_pipeline
+```
+
+## API Endpoints
 
 | Method | Endpoint                | Description                          |
 |--------|-------------------------|--------------------------------------|
@@ -72,7 +76,7 @@ python app.py
 | POST   | /api/index/save         | Persist FAISS index to disk          |
 | POST   | /api/index/load         | Load persisted FAISS index           |
 
-### Example API Calls
+### Example requests
 
 **Index documents:**
 ```bash
@@ -110,45 +114,10 @@ curl -X POST http://localhost:5000/api/optimize \
   }'
 ```
 
-### Run the Demo
-
-```bash
-python demo.py
-```
-
-### Run Tests
-
-```bash
-python -m tests.test_pipeline
-```
-
 ## Evaluation Metrics
 
-### Retrieval Metrics
-- Precision@K, Recall@K, F1@K
-- Mean Reciprocal Rank (MRR)
-- Mean Average Precision (MAP)
-- NDCG@K
+**Retrieval** - Precision@K, Recall@K, F1@K, MRR, MAP, NDCG@K
 
-### Response Quality Metrics
-- Context Relevance (TF-IDF cosine similarity)
-- Faithfulness (lexical grounding score)
-- Completeness (query term coverage)
-- Composite Quality Score (weighted combination)
-- Semantic Similarity (against reference answers)
+**Response quality** - Context relevance (TF-IDF cosine similarity), faithfulness (lexical grounding), completeness (query coverage), composite quality score
 
-### Prompt Optimization
-- Scikit-learn ParameterGrid for systematic search over templates, temperature, and top-k
-- Cross-query quality scoring with mean/std aggregation
-- Per-template latency and token usage comparison
-
-## Configuration
-
-All parameters are configurable via `.env` or `config.py`:
-
-- `EMBEDDING_MODEL` - HuggingFace model for embeddings
-- `GENERATION_MODEL` - HuggingFace model for generation
-- `CHUNK_SIZE` / `CHUNK_OVERLAP` - Document chunking parameters
-- `TOP_K_RETRIEVAL` - Number of chunks to retrieve
-- `TEMPERATURE` / `TOP_P` / `TOP_K_GENERATION` - Generation parameters
-- `FAISS_INDEX_TYPE` - FAISS index type (FlatIP, FlatL2, IVF, HNSW)
+**Prompt optimization** - Scikit-learn ParameterGrid search over templates, temperature, and top-k with cross-query scoring
