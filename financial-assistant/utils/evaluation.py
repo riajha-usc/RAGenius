@@ -264,10 +264,11 @@ class PromptOptimizer:
         context_chunks: List[Dict],
         templates: List[str] = None,
     ) -> Dict:
+        from config import PROMPT_TEMPLATES
+        
         if templates is None:
             templates = list(PROMPT_TEMPLATES.keys())
 
-        from config import PROMPT_TEMPLATES
         template_results = {}
 
         for template in templates:
