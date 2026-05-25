@@ -23,20 +23,6 @@ Query → Embedding (HuggingFace) → FAISS Vector Search → Re-ranking → LLM
 ```bash
 pip install -r requirements.txt
 ```
-
-Create a `.env` file with your configuration:
-
-```
-EMBEDDING_MODEL=sentence-transformers/all-MiniLM-L6-v2
-GENERATION_MODEL=google/flan-t5-base
-CHUNK_SIZE=500
-CHUNK_OVERLAP=50
-TOP_K_RETRIEVAL=5
-TEMPERATURE=0.3
-FAISS_INDEX_TYPE=FlatIP
-FLASK_PORT=5000
-```
-
 ## Usage
 
 ### Run the demo
