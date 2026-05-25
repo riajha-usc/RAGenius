@@ -62,43 +62,6 @@ python -m tests.test_pipeline
 | POST   | /api/index/save         | Persist FAISS index to disk          |
 | POST   | /api/index/load         | Load persisted FAISS index           |
 
-### Example requests
-
-**Index documents:**
-```bash
-curl -X POST http://localhost:5000/api/index/directory \
-  -H "Content-Type: application/json" \
-  -d '{"directory": "data/sample_docs"}'
-```
-
-**Query the pipeline:**
-```bash
-curl -X POST http://localhost:5000/api/query \
-  -H "Content-Type: application/json" \
-  -d '{
-    "query": "What was Apple revenue in 2024?",
-    "top_k": 5,
-    "template": "chain_of_thought",
-    "evaluate": true
-  }'
-```
-
-**Run prompt optimization:**
-```bash
-curl -X POST http://localhost:5000/api/optimize \
-  -H "Content-Type: application/json" \
-  -d '{
-    "eval_queries": [
-      {"query": "What was Apple revenue?", "reference": "Apple reported $383.3B."},
-      {"query": "NVIDIA gross margin?", "reference": "73.8% gross margin."}
-    ],
-    "param_grid": {
-      "template": ["default", "chain_of_thought", "concise"],
-      "temperature": [0.1, 0.3, 0.5],
-      "top_k_retrieval": [3, 5, 7]
-    }
-  }'
-```
 
 ## Evaluation Metrics
 
